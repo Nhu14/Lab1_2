@@ -1,4 +1,5 @@
 def tinh_thue_thu_nhap(thu_nhap):
   # TODO: Sinh viên sẽ cập nhập công thức tính thuế ở đây 
-  return thu_nhap*0.1
+  thu_nhap_tinh_thue = thu_nhap - 4000000
+  return max(0, thu_nhap_tinh_thue * 0.05)
 print("Thuế phải nộp của bạn là:", tinh_thue_thu_nhap(10000000))
